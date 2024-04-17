@@ -1,0 +1,102 @@
+.add_ponts{
+    border: solid 1px;
+    margin: 50px;
+    width: 350px; /* Adjust the width and height as needed */
+    height: 350px;
+    background-color: #6DD3FF; /* Background color for the circle */
+    border-radius: 50%; /* Make the div a circle */
+    text-align: center; /* Center the text horizontally */
+    line-height: 330px; /* Center the text vertically */
+    font-size: 140px; /* Adjust the font size as needed */
+    color: #3A3A3A;
+    border: none;
+    font-weight: bold;
+}
+
+.center_content_screen_points{
+    display: block;
+    height: inherit;
+}
+
+.right_container_points{
+    background-color: #EBEBEB;
+}
+
+.player_text_points{
+    font-family: fantasy;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.right_content_game_points{
+    display: block;
+    margin: 200px 20px 0px 20px;
+}
+
+.play_button_points{
+    margin-top: 120px;
+    background-color: #EBEBEB;
+}
+.points_top_screen_mobile{
+    height: 70%;
+}
+.points_bot_mobile_screen{
+    background-color: #EBEBEB;
+    height: 30%;
+}
+.right_content_game_points_mobile{
+    height: inherit;
+    margin: 0px 0px 0px 0px;
+}
+
+.play_button_points_mobile{
+    margin-top: 0px;
+}
+
+.player_text_points_mobile{
+    line-height: 45px;
+}
+
+@media (max-width: 767px) {
+    .add_ponts{
+        width: 250px; /* Adjust the width and height as needed */
+        height: 250px;
+        margin-top: 0px;
+        line-height: 238px;
+        font-size: 100px;
+    }
+    .point_container_media{
+        min-width: none;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 560px) {
+
+    .right_content_game_points{
+        margin: auto;
+        margin-top: 50px;
+    }
+    .play_button_points{
+        margin-top: 65px;
+    }
+    .points_row{
+        margin: 15px !important;
+    }
+
+
+}
+
+@media (orientation: portrait) and (max-height: 750px) {
+    .player_text_points_mobile{
+        line-height: normal;
+    }
+}
+
+@media (orientation: portrait ) and (min-width: 768px) {
+    .points_top_screen_mobile{
+        width: 100%;
+    }
+}

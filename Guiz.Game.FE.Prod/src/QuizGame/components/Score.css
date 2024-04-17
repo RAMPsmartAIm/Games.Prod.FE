@@ -1,0 +1,116 @@
+.single_score_container{
+    position: fixed;
+    border: solid 1px;
+    width: 50px; /* Adjust the width and height as needed */
+    /* height: 50px; */
+    background-color: #333; /* Background color for the circle */
+    border-radius: 50%; /* Make the div a circle */
+    text-align: center; /* Center the text horizontally */
+    line-height: 44px; /* Center the text vertically */
+    font-size: 17px; /* Adjust the font size as needed */
+    color: #3A3A3A;
+    border: none;
+    font-weight: bold;
+    transition: border-color 0.5s ease;
+    border: 2px solid;
+}
+
+.small_circle{
+    position: fixed;
+    border: solid 1px;
+    width: 20px; /* Adjust the width and height as needed */
+    height: 20px;
+    background-color: #333; /* Background color for the circle */
+    border-radius: 50%; /* Make the div a circle */
+    text-align: center; /* Center the text horizontally */
+    line-height: 18px; /* Center the text vertically */
+    font-size: 16px; /* Adjust the font size as needed */
+    border: none;
+    color: white;
+}
+
+.first_score{
+    background-color: #6DD3FF;
+    border-color: #6DD3FF;
+    top: 18px;
+    left: 35%;
+}
+
+.first_small_circle{
+    top: 69px;
+    left: 55px;
+}
+
+.second_score{
+    background-color: #FFA285;
+    border-color: #FFA285;
+    top: 18px;
+    right: 20px;
+}
+
+
+.second_small_circle{
+    top: 69px;
+    right: 15px;
+}
+
+.third_score{
+    background-color: #FF92CD;
+    border-color: #FF92CD;
+    bottom: 23px;
+    left: 35%;
+}
+
+.third_small_circle{
+    bottom: 57px;
+    left: 55px;
+}
+
+.fourth_score{
+    background-color: #BFB49D;
+    border-color: #BFB49D;
+    bottom: 23px;
+    right: 20px;
+}
+
+.fourth_small_circle{
+    bottom: 57px;
+    right: 15px;
+}
+
+.focused {
+    border-color: #3A3A3A;
+}
+
+@media (max-width: 767px) {
+    .single_score_container{
+        position: fixed;
+    }
+    .small_circle{
+        position: fixed;
+    }
+    
+}
+
+@media only screen and (orientation: portrait){
+    .first_score_mobile{
+        top: 13%;
+        left: 1%;
+    }
+    
+    .second_score_mobile{
+        top: 13%;
+        right: 1%;
+    }
+
+    .third_score_mobile{
+        bottom: 32%;
+        left: 1%;
+    }
+
+    .fourth_score_mobile{
+        bottom: 32%;
+        right: 1%;
+    }
+}
+

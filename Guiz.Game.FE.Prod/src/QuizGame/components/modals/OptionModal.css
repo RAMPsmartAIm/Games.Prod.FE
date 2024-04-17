@@ -1,0 +1,93 @@
+.modal{
+    width: 66.66% !important;
+    margin-left: 33% !important;
+}
+.modal_question{
+    color: #3A3A3A; 
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.modal{
+    --bs-modal-width: auto !important;
+}
+
+.modal-header{
+    border-bottom: none !important;
+}
+
+.modal-dialog{
+    padding: 2% 2% 0% 3% !important;
+    height: 96vh;
+    margin: 0px !important;
+}
+
+.custom_header_modal{
+    flex-direction: column-reverse;
+    border: none;
+}
+
+.modal-content{
+    min-height: 96vh;
+    border: none !important;
+    border-radius: 25px !important;
+    background: #ebebeb !important;
+}
+
+.modal-body{
+    padding-top: 0px;
+}
+
+.custom_modal_header{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.modal-backdrop{
+    --bs-backdrop-opacity: 0 !important;
+}
+
+.custom_modal_button{
+    font-weight: 700;
+    width: 100%;
+    border-radius: 15px;
+    border: solid 1px #3A3A3A;
+    background-color: #EBEBEB;
+    padding: 5px 0px 5px 0px;
+    margin: 7px 0px 7px 0px;
+}
+
+.row_options_modal{
+    margin: 0 auto;
+    margin: 18px 0px 3px 0px;
+}
+
+.focused_option{
+    background-color: #95f09b;
+}
+
+@media (orientation: portrait) {
+    .row_options_modal{
+        margin: 0;
+    }
+    .custom_modal_button{
+        margin-bottom: 20px;
+    }
+
+    /* Modal Portrait */
+    .modal{
+        width: 99% !important;
+        margin-left: auto !important;
+    }
+
+    .modal-content{
+        margin-top: 12vh;
+    }
+
+    .modal-content{
+        min-height: 55vh;
+    }
+}

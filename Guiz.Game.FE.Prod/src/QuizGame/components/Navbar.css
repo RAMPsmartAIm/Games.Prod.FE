@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  padding: 20px 0px 20px 0px !important;
+  display: flex;
+  background-color: #EBEBEB;
+  color: #3A3A3A;
+  padding: 21px 0;
+}
+
+.mobile_navbar {
+  height: 12vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 34px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #3A3A3A;
+  margin-left: 18px;
+}
+
+.nav-links {
+  font-size: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: 18px;
+}
+
+.nav-links li {
+  padding: 0px 5px;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #3A3A3A;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #9c9c9c;
+}
+
+.content {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* --------------- */
+
+.title_settings {
+  width: 80%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #3A3A3A;
+  display: none;
+}
+
+.expanded {
+  position: fixed !important;
+  width: inherit;
+  height: 100vh;
+  z-index: 1000;
+  align-items: normal !important;
+}
+
+
+.expanded .nav-links li {
+  margin-right: 0;
+  margin-bottom: 1rem;
+}
+
+.expanded .title_settings {
+  display: block;
+}
+
+.nav_expanded {
+  display: contents;
+}
+
+.score_row_settings {
+  border: solid 1px #3A3A3A;
+  margin: 11px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+}
+
+.title_players_settings {
+  margin-top: 30px;
+  padding: 30px 15px 0px 15px;
+  text-transform: uppercase;
+  font-family: FontAwesome;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.number_text_board {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.red_text {
+  color: #b80000
+}
+
+.center_row {
+  color: #3A3A3A;
+  text-decoration: none;
+  display: table;
+  margin: 0 auto;
+  width: inherit;
+}
+
+.center_row:hover {
+  color: #9c9c9c;
+}
+
+.alert_dot{
+  width: 11px;
+  height: 11px;
+  background: #11D991;
+  border-radius: 16px;
+  position: absolute;
+  right: 16px;
+  top: 32%;
+}
+
+@media (orientation: portrait) {
+  .center_row {
+    width: 100%;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 560px) {
+  .mobile_navbar{
+      height: 20vh;
+  }
+}

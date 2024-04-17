@@ -1,0 +1,41 @@
+.center_row_modal{
+    width: 80%;
+}
+.score_row_settings_modal{
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.number_text_board_modal{
+    font-weight: 600;
+}
+.font_title_settings_modal{
+    font-size: 31px !important;
+    font-family: fantasy;
+    text-transform: uppercase;
+}
+.share_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen_icon{
+    width: 30%;
+    margin: 20px 0px 20px 0px
+}
+
+.button_share{
+    width: 35%;
+    border-radius: 15px;
+    border: solid 1px #3A3A3A;
+}
+
+.share_text{
+    font-size: 21px !important;
+    font-weight: bold !important;
+}
+
+.link_share{
+    display: contents;
+}

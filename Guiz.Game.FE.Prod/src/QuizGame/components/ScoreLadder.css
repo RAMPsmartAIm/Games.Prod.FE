@@ -1,0 +1,67 @@
+.first_row{
+    margin-top: 20px !important;
+    border: solid 2px #3A3A3A;
+}
+
+.first_player_row{
+    background-color: #6DD3FF;
+}
+
+.second_player_row{
+    background-color: #FFA285;
+}
+
+.third_player_row{
+    background-color: #FF92CD;
+}
+
+.fourth_player_row{
+    background-color: #BFB49D;
+}
+
+.score_row{
+    margin: 11px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+}
+
+.number_text_board{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: -0.01em;
+    text-align: center;    
+}
+
+.score_text_board{
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    
+}
+
+.winner_score{
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.player_board{
+    border: solid 1px;
+    width: 20px; /* Adjust the width and height as needed */
+    height: 20px;
+    background-color: #333; /* Background color for the circle */
+    border-radius: 50%; /* Make the div a circle */
+    text-align: center; /* Center the text horizontally */
+    line-height: 18px; /* Center the text vertically */
+    font-size: 16px; /* Adjust the font size as needed */
+    border: none;
+    color: white;
+}

@@ -1,0 +1,102 @@
+.first_player_button {
+    background-color: #6DD3FF;
+}
+
+.second_player_button {
+    background-color: #FFA285;
+}
+
+.third_player_button {
+    background-color: #FF92CD;
+}
+
+.fourth_player_button {
+    background-color: #BFB49D;
+}
+
+.remove_padding {
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+:root {
+    --end-color: blue;
+}
+
+.shower {
+    opacity: 1;
+    transition: opacity 1.2s ease-in-out;
+}
+
+@keyframes shower_anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.enter_shower {
+    animation: shower_anim 1.2s ease-in-out;
+}
+
+@keyframes colorChange {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.backgroundAnim {
+    width: 100%;
+    height: 100%;
+    background-color: var(--end-color);
+    position: absolute;
+    left: -100%;
+    animation: colorChange 1.5s ease-out;
+    z-index: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes colorChange2 {
+    0% {
+        height: 0;
+        /* Start with no height */
+        bottom: 0;
+        /* Start from bottom */
+    }
+
+    100% {
+        height: 100%;
+        /* Cover full height */
+        bottom: 0;
+        /* Stay at bottom */
+    }
+}
+
+.backgroundAnim2 {
+    width: 100%;
+    height: 0;
+    /* Start with no height */
+    background-color: var(--end-color);
+    position: absolute;
+    bottom: 0;
+    /* Start from bottom */
+    animation: colorChange2 1.5s ease-out;
+    z-index: 0;
+}
+
+
+.link_pointer {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}

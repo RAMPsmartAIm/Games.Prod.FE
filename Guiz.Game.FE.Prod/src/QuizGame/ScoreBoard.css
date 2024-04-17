@@ -1,0 +1,92 @@
+.left_container_score{
+    display: block;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.center_content_screen_score{
+    display: block;
+}
+
+.right_container_score{
+    background-color: #ebebeb;
+}
+
+.right_container_game_score{
+    margin: 100px 20px 0px 20px;
+}
+
+.right_content_score{
+    display: block;
+}
+
+.play_button_score{
+    background-color: #ebebeb;
+}
+
+.score_center{
+    margin-bottom: 25%;
+}
+
+.right_content_score_screen{
+    padding-top: 120px;
+    margin: 0px 10px 0px 10px;
+}
+
+.top_score_screen{
+    height: 70%;
+}
+.bot_score_screen{
+    background-color: #ebebeb;
+    height: 30%;
+}
+
+.play_button_game_screen_mobile{
+    margin-top: 0px;
+}
+
+.right_content_score_mobile{
+    padding: 0px;
+    margin: 0px 75px 0px 75px;
+}
+
+.play_text_mobile_score{
+    line-height: 40px;
+}
+.wrapper_scoreboard{
+    display: flex;
+    height: 80%;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+@media (orientation: portrait) {
+
+    .play_text_mobile_score{
+        padding-top: 20px;
+    }
+
+}
+
+@media (orientation: landscape) {
+    .dashboard_media{
+        padding-top: 0px;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 560px) {
+
+    .score_center{
+        margin-bottom: 0%;
+    }
+    .right_content_score_screen{
+        padding: 75px 20px 30px 20px;
+    }
+}
+
+@media (orientation: portrait ) and (min-width: 768px) {
+    .top_score_screen{
+        width: 100%;
+    }
+}
