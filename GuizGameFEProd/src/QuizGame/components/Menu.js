@@ -84,6 +84,7 @@ function Menu(props) {
                 <button
                   onClick={EndTurn}
                   className={`play_button play_button_game_screen play_button_transparent`}
+                  id="interstitial"
                 >
                   {session.endTurn}
                 </button>
@@ -97,7 +98,7 @@ function Menu(props) {
                   <p className="play_text">We wish you a lot of fun!</p>
                   <button
                     onClick={() => props.handleStartGame()}
-                    className="play_button play_button_start_screen"
+                    className="rewarded-link play_button play_button_start_screen"
                   >
                     Play
                   </button>

@@ -1,0 +1,50 @@
+{
+    "targeting": [{
+        "name": "tmp",
+        "value": "article"
+    }],
+    "adSlots": {
+        "enabled": true,
+        "slots": [
+            {
+                "adId": "/22987041268/new_test_sk/test_1",
+                "googleTagDivId": "div-gpt-ad-1678975276578-0",
+                "customDivId": "my-id-1",
+                "sizeList": [
+                    { "value": [300, 300] },
+                    { "value": [1, 1] },
+                    { "value": [300, 250] },
+                    { "value": "fluid" },
+                    { "value": [300, 300] },
+                    { "value": [200, 200] }
+                ],
+                "targeting": {
+                    "name": "seg",
+                    "values": ["a","b","c","d"]
+                }
+            }
+        ]
+    },
+    "rewardedAd": {
+        "enabled": true,
+        "adId": "/22639388115/rewarded_web_example",
+        "customElementClass": "rewarded-link",
+        "targeting": {
+            "name": "seg",
+            "values": ["a","b","c","d"]
+        },
+        "openAdText": "Odomknutie obsahu na jeden klik",
+        "openAdSubText": "Subheadline text",
+        "buttonText": "Súhlas",
+        "rewardText": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+    },
+    "interstitialAd": {
+        "enabled": true,
+        "adId": "/22987041268/new_test_sk/interstitial",
+        "customLinkId": "interstitial",
+        "targeting": {
+            "name": "seg",
+            "values": ["a","b","c","d"]
+        }
+    }
+}

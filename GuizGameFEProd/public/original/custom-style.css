@@ -1,0 +1,237 @@
+#admanager_stickyAdCloseButton {
+  z-index: 9999;
+  position: fixed;
+  height: 21px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.25);
+}
+
+#admanager_stickyAdCloseButton:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: #fff;
+}
+
+#admanager_custom_sticky_bottom_ad_parent {
+  display: none;
+}
+
+#admanager_custom_sticky_bottom_ad {
+  z-index: 9999;
+  max-height: 1000px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  transform: translateY(45%);
+}
+
+@media (min-width: 1024px) {
+  #admanager_custom_sticky_bottom_ad:hover {
+    transform: translateY(0%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  #admanager_custom_sticky_bottom_ad + #admanager_stickyAdCloseButton {
+    bottom: 138px !important;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #admanager_custom_sticky_bottom_ad:hover + #admanager_stickyAdCloseButton {
+    bottom: 250px !important;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 1024px) {
+  #admanager_custom_sticky_bottom_ad {
+    transform: translateY(0%);
+  }
+}
+
+#admanager_rewarded-ad-button {
+  z-index: 9999;
+  width: 20em;
+  height: 3em;
+  background-color: #1866d0;
+  border: none;
+  border-radius: 2em;
+  color: #fff;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+#admanager_rewarded-ad-modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99999999;
+  justify-content: center;
+  align-items: center;
+}
+
+.admanager-rewarded-add-close-button {
+  position: absolute;
+  top: 0.1em;
+  right: 0.5em;
+  cursor: pointer;
+  font-size: 2.5em;
+}
+
+.admanager-rewarded-add-headline {
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+}
+
+.admanager-rewarded-add-subheadline {
+  font-size: 1.1em;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+}
+
+.admanager-rewarded-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 25em;
+  height: 18em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+}
+
+@media (max-width: 576px) {
+  .admanager-rewarded-modal-content {
+    height: 98vh;
+    height: 98dvh;
+  }
+}
+
+#admanager_video-container {
+  position: relative;
+  /* forces the container to match a 16x9 aspect ratio */
+  /* replace with 75% for a 4:3 aspect ratio, if needed */
+  padding-bottom: 56.25%;
+}
+
+#admanager_video-element {
+  /* forces the contents to fill the container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#admanager_ad-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#admanager_custom-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+#admanager_play-pause-button {
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+#playIcon {
+  filter: invert(99%) sepia(7%) saturate(385%) hue-rotate(253deg)
+    brightness(120%) contrast(100%);
+    cursor: pointer;
+}
+
+.admanager_hidden {
+  display: none;
+}
+
+#admanager_progress-bar {
+  width: 200px;
+}
+
+#admanager_video-container.admanager_bottom-right {
+  width: 350px;
+  height: 200px;
+  position: fixed;
+  bottom: 20px;
+  /* Adjust this value as needed */
+  right: 20px;
+  /* This will make the right edge of the container stick to the right edge of the window */
+  z-index: 9999999;
+  padding-bottom: 0;
+}
+
+#admanager_close-button {
+  position: absolute;
+  top: -31px;
+  right: 0px;
+  z-index: 9999;
+  width: 100px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.25);
+}
+
+#admanager_volume-slider {
+  position: relative;
+  top: -15px;
+  cursor: pointer;
+}
